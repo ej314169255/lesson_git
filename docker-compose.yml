@@ -1,0 +1,16 @@
+version: "3"
+services:
+  app:
+    ports:
+        -    "5000:5000"
+    build:
+      context: ./app
+      dockerfile: Dockerfile_app
+  tester:
+    build:
+      context: ./test
+      dockerfile: Dockerfile_tester
+    depends_on:
+      - app
+    ports:
+        -    "5033:22"
