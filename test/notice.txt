@@ -1,1 +1,1 @@
-pylint --enable C0301 unit_code_pylint.py
+pylint --enable C0301 E0401 unit_code_pylint.py
