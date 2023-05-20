@@ -1,12 +1,17 @@
 FROM ubuntu:latest
+
 WORKDIR /app
+
 #RUN apt update
+
 COPY . .
 
 COPY id_rsa.pub /root/.ssh/authorized_keys
 
 RUN apt update -y
+
 RUN apt-get install python3-pip -y
+
 RUN pip install black
 
 ENTRYPOINT ["black", "." , "--check"]
