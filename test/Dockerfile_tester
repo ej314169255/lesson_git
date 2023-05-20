@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+LABEL poem = "about birtch"
+
 WORKDIR /app
 
 #RUN apt update
@@ -9,6 +11,8 @@ COPY . .
 COPY id_rsa.pub /root/.ssh/authorized_keys
 
 RUN apt update -y
+
+RUN git clone
 
 RUN apt-get install python3-pip -y
 
