@@ -1,7 +1,11 @@
 FROM ubuntu:22.04
 WORKDIR /app
 COPY ../ .
+
 RUN apt update -y
+
 RUN apt-get install python3-pip -y
+
 RUN pip install black
+
 ENTRYPOINT ["black", ".", "--check"]
