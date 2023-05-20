@@ -7,6 +7,10 @@ services:
     build:
       context: ./app
       dockerfile: Dockerfile_app
+    deploy:
+        resouces:
+            limits:
+                memory: 150M
   tester:
     build:
       context: ./test
