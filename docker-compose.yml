@@ -17,5 +17,6 @@ services:
       dockerfile: Dockerfile_tester
     depends_on:
       - app
+      - forester
     ports:
         -    "5033:22"
