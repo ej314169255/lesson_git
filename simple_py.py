@@ -1,6 +1,7 @@
 """ parameter setting of Luc let`s go said a Gibbon when step to new planet. 
 Lets raise who can introduse wery haigh intelegent think. 
 We has three examples and so one. 
+hey!
 It is programer, scool, driver moto"""
 
 from PyQt5.QtGui import *
