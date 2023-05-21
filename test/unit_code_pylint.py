@@ -1,8 +1,9 @@
 """ parameter setting of Luc let`s go said a Gibbon when step to new planet. 
-Lets raise who can introduse wery haigh intelegent think. 
+Hey! Lets raise who can introduse wery haigh intelegent think. 
 We has three examples and so one. 
 It is programer, scool, driver moto"""
 
+from baysic import CLS
 from PyQt5.QtGui import *
 import aggdraw
 import sys, traceback
