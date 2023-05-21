@@ -3,7 +3,7 @@ label: "tree"
 services:
   app:
     ports:
-        -    "5505:5000"
+        -    "5005:5000"
     build:
       context: ./app
       dockerfile: Dockerfile_app
